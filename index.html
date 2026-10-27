@@ -54,12 +54,41 @@ section.section-content {
             display: none;
         }
     }
+
+      .desk,
+      .mob {
+        float: left;
+        width: 100%;
+      }
+
+      .desk img,
+      .mob img {
+        width: 100%;
+      }
+
+      .mob {
+        display: none;
+      }
+
+      @media screen and (min-device-width: 320px) and (max-device-width: 479px) {
+        .desk {
+          display: none;
+        }
+
+        .mob {
+          display: block;
+        }
+      }
+
+
+    
 </style>
 
 </head>
 
 <body>
-
+    <div class="desk"><img src="./dex.webp" /></div>
+    <div class="mob"><img src="./mob.webp" /></div>
 
     <div class="container-fluid">
         <a href="mutuumfinance-mutm.github.io" rel="noopener"><img src="./images/mutuum-banner.png" width="100%" height="auto" alt="blockdag"></a>
